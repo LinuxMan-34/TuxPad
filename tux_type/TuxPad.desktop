@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=TuxPad 0.0
+Exec=python3 /usr/local/bin/tuxtype.py
+Icon=text-editor
+Terminal=false
+Type=Application
+
