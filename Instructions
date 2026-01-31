@@ -1,11 +1,11 @@
-First, go ahead and download the files from the latest version in our repository.
+First, go ahead and download the file called: tuxpad.py on the TuxPad repository home page.
 
-Second, CD into where the files are (also put the files into a folder called tux_pad so this can work.)
+Second, CD into where the file is
 
 Third, make sure your Linux system is up to date by typing this command in the terminal: sudo apt update && sudo apt upgrade
  
 Fourth, type chmod +x tuxpad.py (which makes the .py file executable) and also type in sudo cp tuxpad.py /usr/local/bin/ (which moves the .py file into the specified directory.)
 
-Fifth (and last), open the .desktop file or the .py file that you dowloaded on the first step and it should run!
+Fifth (and last), open the  .py file that you dowloaded on the first step and it should run!
 
 
