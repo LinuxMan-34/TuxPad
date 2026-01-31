@@ -1,0 +1,9 @@
+First, go ahead and download the files from the Downloads part in our repository.
+
+Second, make sure your Linux system is up to date by typing this command in the terminal: sudo apt update && sudo apt upgrade
+ 
+Third, type chmod +x tuxtype.py (which makes the .py file executable) and also type in sudo cp tuxtype.py /usr/local/bin/ (which moves the .py file into the specified directory.)
+
+Fourth (and last), open the .desktop file that you dowloaded on the first step and it should run!
+
+Fifth (bonus) Experiment with it, customize it and design it the way you like! Since our software is completely open source and also use a MIT liscense, 
