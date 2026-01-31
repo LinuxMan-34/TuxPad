@@ -8,12 +8,7 @@ class TuxPad:
         self.root = root
         self.root.title("TuxPad 0.0")
         self.root.geometry("900x700")
-        
-        # Set a generic app icon if it exists, otherwise skip
-        # This helps it look like a real app on the taskbar
         try:
-            # If you ever add a .ico or .png icon, name it icon.png 
-            # and place it in the same folder.
             icon_path = os.path.join(os.path.dirname(__file__), "icon.png")
             if os.path.exists(icon_path):
                 img = tk.PhotoImage(file=icon_path)
@@ -21,7 +16,7 @@ class TuxPad:
         except Exception:
             pass
 
-        # --- HEADER SECTION ---
+        
         self.header_frame = tk.Frame(self.root, bg="#f0f0f0")
         self.header_frame.pack(fill="x", side="top", padx=10, pady=5)
 
@@ -29,7 +24,7 @@ class TuxPad:
                                     font=("Segoe UI", 20, "bold"), bg="#f0f0f0")
         self.title_label.pack(side="left")
 
-        # --- TEXT EDITOR AREA ---
+        
         self.scrollbar = tk.Scrollbar(self.root)
         self.scrollbar.pack(side="right", fill="y")
 
@@ -42,7 +37,7 @@ class TuxPad:
         self.text_area.pack(expand=True, fill="both")
         self.scrollbar.config(command=self.text_area.yview)
 
-        # --- MENU BAR ---
+        
         self.menu_bar = tk.Menu(self.root)
         self.root.config(menu=self.menu_bar)
 
@@ -59,7 +54,7 @@ class TuxPad:
         edit_menu.add_command(label="Undo", command=self.text_area.edit_undo, accelerator="Ctrl+Z")
         edit_menu.add_command(label="Redo", command=self.text_area.edit_redo, accelerator="Ctrl+Y")
 
-        # Global Key Bindings
+        
         self.root.bind_all('<Control-n>', lambda e: self.new_file())
         self.root.bind_all('<Control-o>', lambda e: self.open_file())
         self.root.bind_all('<Control-s>', lambda e: self.save_file())
