@@ -1,4 +1,4 @@
-First, go ahead and download the file called: tuxpad.py on the TuxPad repository home page.
+First, go ahead and download the file called: tuxpad.py on the TuxPad repository home page.   (MAKE SURE TKINTER IS INSTALLED BY TYPING THIS IS THE TERMINAL: apt-get install python3-tk)
 
 Second, CD into where the file is
 
