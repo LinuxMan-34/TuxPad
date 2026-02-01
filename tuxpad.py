@@ -6,8 +6,8 @@ import os
 class TuxPad:
     def __init__(self, root):
         self.root = root
-        self.root.title("TuxPad 0.0")
-        self.root.geometry("900x700")
+        self.root.title("TuxPad 0.0 Lite")
+        self.root.geometry("850x700")
         try:
             icon_path = os.path.join(os.path.dirname(__file__), "icon.png")
             if os.path.exists(icon_path):
@@ -20,7 +20,7 @@ class TuxPad:
         self.header_frame = tk.Frame(self.root, bg="#f0f0f0")
         self.header_frame.pack(fill="x", side="top", padx=10, pady=5)
 
-        self.title_label = tk.Label(self.header_frame, text="🐧 TuxPad 0.0", 
+        self.title_label = tk.Label(self.header_frame, text="🐧 TuxPad 0.0 Lite", 
                                     font=("Segoe UI", 20, "bold"), bg="#f0f0f0")
         self.title_label.pack(side="left")
 
