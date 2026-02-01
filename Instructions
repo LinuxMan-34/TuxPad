@@ -4,8 +4,7 @@ Second, CD into where the file is (should be in Downloads.)
 
 Third, make sure your Linux system is up to date by typing this command in the terminal: sudo apt update && sudo apt upgrade
  cha
-Fourth, type chmod +x tuxpad.py (which makes the .py file executable) and also type in sudo cp tuxpad.py /usr/local/bin/ (which moves the .py file into the specified directory, change if you would want the file in a different directory like Desktop.)
-
+Fourth, type chmod +x tuxpad.py (which makes the .py file executable) 
 Fifth (and last), open the  .py file that you dowloaded on the first step and it should run!
 
 
